@@ -9,11 +9,11 @@
 <body>
 <main>
 <h1>PlantHappy Privacy Policy</h1>
-<p class="meta">Effective October 25, 2026</p>
+<p class="meta">Effective October 28, 2026</p>
 
 <p>PlantHappy is a plant care app that helps you track watering, fertilizing, notes, and photos for your plants. This policy explains what information the app uses and where it goes.</p>
 
-<p><strong>The short version:</strong> PlantHappy has no accounts, no ads, no analytics, and no servers of its own. Your plants, notes, photos, and profile details stay on your device. The only information that may leave your device is location data, which is optional and entirely under your control. It is sent to weather and place-lookup services only so the app can show local weather.</p>
+<p><strong>The short version:</strong> PlantHappy has no accounts, no ads, no analytics, and no servers of its own. Your plants, notes, photos, and profile details stay on your device. The only information that may leave your device is location data, which is optional and entirely under your control. It is sent to weather and place-lookup services only so the app can show local weather and warn you about frost.</p>
 
 <h2>Information stored on your device</h2>
 <p>The following is saved only on your device and is never sent to us:</p>
@@ -23,27 +23,30 @@
 <li>Photos you choose to attach to a plant</li>
 <li>Your first name, last name, and email address, if you enter them in Settings</li>
 <li>Your saved weather location and reminder settings</li>
+<li>Frost alert settings, your last device location rounded to about 1 km (kept for up to 30 days), and the estimated first-frost date for that area</li>
 </ul>
 <p>We (the developer) cannot see or access any of this information.</p>
 
-<h2>Location and weather (optional)</h2>
-<p>PlantHappy shows current weather on its home screen. This is the only feature that sends any information off your device, and it is optional. Location data, including your precise device location, is collected only if you choose to allow it, and you can change that choice at any time.</p>
+<h2>Location, weather, and frost alerts (optional)</h2>
+<p>PlantHappy shows current weather on its home screen and can warn you when frost is coming. These are the only features that send any information off your device, and they are optional. Location data, including your precise device location, is collected only if you choose to allow it, and you can change that choice at any time.</p>
 <p>The app can get weather in one of two ways, and you decide which, if either, is used:</p>
 <ul>
 <li><strong>Device location (precise):</strong> only if you grant PlantHappy location permission and have not saved a weather location in Settings. The app reads your device's precise location, then sends coordinates rounded to about 1 km to <a href="https://open-meteo.com/">Open-Meteo</a> to get the current weather. To show your city name, it sends the same rounded coordinates to your device's built-in geocoding service (on Android, provided by Google) and, if that is unavailable, to <a href="https://nominatim.openstreetmap.org/">Nominatim</a>, a service run by the OpenStreetMap Foundation. If the weather lookup fails, the app may send your precise coordinates to your device's built-in geocoding service to show your city name instead.</li>
 <li><strong>A location you search for (approximate):</strong> if you search for a place in Settings, the text you type is sent to Nominatim to find matching places. The saved place's coordinates, rounded to about 1 km, are then used for weather and city-name lookups as described above. Your device's own location is not used.</li>
 </ul>
+<p><strong>Frost alerts:</strong> if frost alerts are turned on, PlantHappy uses the same location as the weather display (your saved weather location, or otherwise your device location) to check for frost. It sends coordinates rounded to about 1 km to Open-Meteo to get an hourly temperature forecast for the next 36 hours. To estimate when the first frost usually arrives in your area, it also sends the same rounded coordinates to Open-Meteo's historical weather service to get past daily low temperatures. This happens about once a year, or when your location changes. If your current location isn't available, the app may use your last device location, which it keeps on your device rounded to about 1 km for up to 30 days.</p>
 <p><strong>You control this collection:</strong></p>
 <ul>
 <li>Choose <em>Don't allow</em> when PlantHappy asks for location permission, or turn the permission off at any time in your device's settings.</li>
 <li>Save a weather location in Settings to use it instead of your device's location.</li>
-<li>If you deny location permission and do not save a weather location, no location data leaves your device. The rest of the app works normally; only the weather display is unavailable.</li>
+<li>Turn off frost forecast alerts and the frost season reminder in Settings to stop frost checks.</li>
+<li>If you deny location permission and do not save a weather location, no location data leaves your device. The rest of the app works normally; only the weather display and frost alerts are unavailable.</li>
 </ul>
-<p>Location data is used only to show weather. It is not used for advertising, profiling, or any other purpose, and we (the developer) never receive it.</p>
+<p>Location data is used only to show weather and frost alerts. It is not used for advertising, profiling, or any other purpose, and we (the developer) never receive it.</p>
 <p>These services receive each request along with your device's IP address, as with any internet request. Their handling of that data is governed by their own policies: <a href="https://open-meteo.com/en/terms">Open-Meteo terms and privacy</a>, the <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap Foundation privacy policy</a>, and, for your device's built-in geocoding service on Android, <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
 
 <h2>Notifications</h2>
-<p>If you turn on watering or fertilizing reminders, PlantHappy schedules notifications locally on your device. No reminder information is sent anywhere.</p>
+<p>If you turn on watering or fertilizing reminders or frost alerts, PlantHappy schedules notifications locally on your device. No notification information is sent anywhere.</p>
 
 <h2>Backups</h2>
 <p>You can create a backup file that contains your plants, activity history, photos, plant locations, and profile details. The file is saved wherever you choose, such as a folder on your device or your own cloud storage. PlantHappy does not upload or host backups. Backup files are not encrypted, so store them somewhere private.</p>
